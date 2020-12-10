@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutBack"
+    android:background="@drawable/background_movie_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/coverImage"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/movieTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/coverImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Titulo de la película"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/movieDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/movieTitle"
+        app:layout_constraintStart_toStartOf="@id/movieTitle"
+        app:layout_constraintTop_toBottomOf="@id/movieTitle"
+        tools:text="Descripción de la película"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/moviePR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="Mayores de xx años"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/favoriteIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/coverImage"
+        app:layout_constraintStart_toEndOf="@id/coverImage"
+        android:src="@drawable/ic_favorite" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

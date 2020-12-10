@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MoviesApp</string>
+
+    //Labels
+    <string name="fragment_movies_title">Películas</string>
+    <string name="fragment_movie_detail_title">Nombre de la Película</string>
+    <string name="fragment_movies_favorites_title">Favoritos</string>
+
+    //Titles Group
+    <string name="title_recycler_recommendede">Recomendadas</string>
+
+    //Labels Layouts
+    <string name="preview_text">Preview</string>
+
+    //Various description
+    <string name="pending_classification">Pendiente de clasificación</string>
+    <string name="year">"Año %1$s"</string>
+    <string name="film_not_found">Película no encontrada</string>
+    <string name="not_found_favorites">No se ha seleccinado ninguna película como favortita. Presione el botón corazón de una película para guardarla como favorita.</string>
+    <string name="favorite_menu">favorita</string>
+
+
+</resources>
