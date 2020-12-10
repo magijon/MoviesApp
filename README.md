@@ -8,7 +8,7 @@ As an extra functionality, the option to switch from vertical screen to horizont
 
 ### Used libraries and explanation of them
 
-##### Hilt
+#### Hilt
 This library has been implemented to be able to make use of dependency injection. This library is an evolution of Dagger2 and provides us with these functions in many ways. In addition to adding some tools for ViewModels
 
 
@@ -17,7 +17,7 @@ This library has been implemented to be able to make use of dependency injection
     kapt 'com.google.dagger:hilt-android-compiler:2.28.1-alpha'
     kapt "androidx.hilt:hilt-compiler:1.0.0-alpha01"
 
-##### LifeCycle
+#### LifeCycle
 This library has been implemented with the tools that accompany it and are necessary for the use of the LiveData elements, which allow us to create observers on elements of the viewmodel and adjust accordingly, thus obtaining a better sense of use for the user.
 
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
@@ -25,14 +25,14 @@ This library has been implemented with the tools that accompany it and are neces
     implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
 
-##### Retrofit
+#### Retrofit
 To facilitate usp of the network calls, data collection, transformation to JSON and correct settings of this, we will use the following libraries.
 
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:4.2.1'
 
-##### Kotlin Corountines
+#### Kotlin Corountines
 To take advantage of the facilities of the Kotlin language even more, we have chosen to use "corountines", thus converting our app into asynchronous, for the use of network calls, databases, etc ...
 In addition to having to implement them in the tests for their use.
 
@@ -40,27 +40,27 @@ In addition to having to implement them in the tests for their use.
     testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.4.0'
 
 
-##### Room
+#### Room
 Due to the needs of the project, it is necessary to maintain a series of data on those favorite films, for this it is approved by the use of this library, which facilitates the use and maintenance of databases with labels and models
 
     implementation "androidx.room:room-runtime:$room_version"
     implementation "androidx.room:room-ktx:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
 
-##### Navigation
+#### Navigation
 As one of the latest news that JetPack offers us, we have the Navigation component, to facilitate the development of the navigation of our App, controlling the flow, the return to the back, animations between fragments ...
 
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
 
-##### Glide
+#### Glide
 For the use of images and an easy loading of the same, we have used Glide, that through some simple guidelines and a URL, we can load images, forgetting a large part of their maintenance and always in a dynamic way.
 
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     kapt 'com.github.bumptech.glide:compiler:4.11.0'
 
 
-##### Test
+#### Test
 Finally, a series of dependencies related to the tests have been implemented, so that such use is much faster and understandable. Like the Mockito tool that allows us to create a mock of our objects without having to declare it and through the declaration of situations we can dynamically assign data, or like Roboletric that has advanced functions in the use of Test.
 
     testImplementation 'org.mockito:mockito-core:3.1.0'
